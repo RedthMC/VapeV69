@@ -1,5 +1,6 @@
 # VapeV69
 a client side visual mod that makes ur game looks like cheating
+( still use at ur own risk )
 
 # Features
 - **Auto Blockhit** - makes u always blockhit
