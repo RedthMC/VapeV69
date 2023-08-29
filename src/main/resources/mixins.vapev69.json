@@ -1,0 +1,8 @@
+{
+  "package": "me.redth.vapev69.mixin",
+  "refmap": "mixins.vapev69.refmap.json",
+  "compatibilityLevel": "JAVA_8",
+  "client": [
+    "EntityPlayerSPMixin"
+  ]
+}

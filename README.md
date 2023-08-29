@@ -1,15 +1,12 @@
-# MMCUtils
-Utilities for Minemen Club
+# VapeV69
+a client side visual mod that makes ur game looks like cheating
 
 # Features
-- **Auto Practice** - Go straight into practice once joined.
-- **Auto Party Chat** - Enter party chat once joined practice.
-- **Height Overlay** - Make wools and terracottas darker at height limit.
-- **Height Overlay Darkness** - Adjust the darkness of height limit overlay.
-- **Height Overlay Distance HUD** - Shows how many blocks you are away from height limit.
+- **Auto Blockhit** - makes u always blockhit
+- **Safewalk** - makes u appear not sneaking
+- **Spinning Head** - makes ur head turn towards the nearest player
+- **List** - a simple list to show enabled modules
 
 Configurable in `OneConfig` menu
 
-# Requirements
-- OptiFine Smooth Lighting: On
-
+![settings.png](images/settings.png)
