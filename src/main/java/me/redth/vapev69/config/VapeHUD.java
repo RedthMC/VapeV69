@@ -13,6 +13,6 @@ public class VapeHUD extends TextHud {
     protected void getLines(List<String> lines, boolean example) {
         if (VapeConfig.blockhit) lines.add("Auto Blockhit");
         if (VapeConfig.safewalk) lines.add("Safewalk");
-        if (VapeConfig.spinning) lines.add("KillAura");
+        if (VapeConfig.aimbot) lines.add("Aimbot");
     }
 }
