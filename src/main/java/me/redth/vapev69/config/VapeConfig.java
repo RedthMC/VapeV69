@@ -2,6 +2,7 @@ package me.redth.vapev69.config;
 
 import cc.polyfrost.oneconfig.config.Config;
 import cc.polyfrost.oneconfig.config.annotations.HUD;
+import cc.polyfrost.oneconfig.config.annotations.Slider;
 import cc.polyfrost.oneconfig.config.annotations.Switch;
 import cc.polyfrost.oneconfig.config.data.Mod;
 import cc.polyfrost.oneconfig.config.data.ModType;
@@ -20,6 +21,9 @@ public class VapeConfig extends Config {
 
     @Switch(name = "Spin head if not aimboting")
     public static boolean spinning = false;
+
+    @Slider(name = "Search Distance", min = 0F, max = 64F)
+    public static float distance = 5F;
 
     @HUD(name = "List")
     public static VapeHUD hud = new VapeHUD();
