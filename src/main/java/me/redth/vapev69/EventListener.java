@@ -2,15 +2,11 @@ package me.redth.vapev69;
 
 import me.redth.vapev69.config.VapeConfig;
 import net.minecraft.client.Minecraft;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.util.Vec3;
-import net.minecraft.world.World;
 import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
-
-import javax.swing.*;
 
 import static me.redth.vapev69.config.VapeConfig.distance;
 
