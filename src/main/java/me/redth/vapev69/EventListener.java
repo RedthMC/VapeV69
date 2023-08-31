@@ -8,6 +8,8 @@ import net.minecraftforge.client.event.RenderPlayerEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
 
+import static me.redth.vapev69.config.VapeConfig.distance;
+
 public class EventListener {
     private static final Minecraft mc = Minecraft.getMinecraft();
 
@@ -51,7 +53,8 @@ public class EventListener {
         prevRotationYawHeadVisual = rotationYawHeadVisual;
         prevRotationPitchVisual = rotationPitchVisual;
 
-        EntityPlayer nearestEntity = mc.theWorld.findNearestEntityWithinAABB(EntityPlayer.class, mc.thePlayer.getEntityBoundingBox().expand(5, 5, 5), mc.thePlayer);
+        EntityPlayer nearestEntity = mc.theWorld.findNearestEntityWithinAABB(EntityPlayer.class, mc.thePlayer.getEntityBoundingBox().expand(distance, distance, distance), mc.thePlayer);
+
         if (nearestEntity == null) {
 
             rotationYawHeadVisual = VapeConfig.spinning ? System.currentTimeMillis() % 360 : mc.thePlayer.rotationYawHead;
@@ -86,4 +89,6 @@ public class EventListener {
     public void onRenderTick(TickEvent.RenderTickEvent event) {
         isInRenderTick = event.phase == TickEvent.Phase.START;
     }
+
+
 }
